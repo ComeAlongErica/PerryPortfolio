@@ -1,0 +1,248 @@
+/* General Formatting */
+
+header, footer {
+  background: linear-gradient(127deg, rgba(129,230,226,.8), rgba(129,230,226,0) 70.71%),
+              linear-gradient(217deg, rgba(239,240,140,.8), rgba(239,240,140,0) 70.71%),
+              linear-gradient(336deg, rgba(255,152,197,.8), rgba(255,152,197,0) 70.71%);
+}
+.container {
+  width: 100%;
+}
+
+a, h1, h2, h3, h4, p, form, ul, ol{
+  font-family: roboto;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: bold;
+  padding: 10px;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 10px;
+}
+
+a, h4 {
+    font-variant-caps: all-small-caps;
+    margin: 5px;
+    padding-bottom: 5px;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+h3{
+  text-transform: uppercase;
+}
+
+p {
+  font-size: .75em;
+  padding: 10px;
+}
+
+
+.nav, .links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.navigationLink, .button {
+  padding: 20px;
+  color: grey;
+  text-decoration: none;
+}
+
+img.logo {
+  width: 30%;
+  height: 30%;
+}
+
+footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.footerFix {
+  clear: both;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.footerText {
+  text-align: center;
+  color: grey
+}
+
+.instagram {
+  height: 25px;
+  width: 25px;
+  display: block;
+  margin: auto;
+}
+
+/* Index Page */
+
+.heroText {
+  font-size: 7em;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.heroDescription {
+  font-size: .9em;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+section {
+  padding: .5vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section div {
+  flex: auto;
+  width: 200px;
+  margin: .5vw;
+}
+
+section div img {
+  width: 100%;
+  height: auto;
+
+}
+
+/* About Me Page */
+.aboutMe {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.self {
+  margin: 10px 15px;
+  width: 50%;
+  border-radius: 100%;
+}
+
+.aboutMeBody {
+  margin-left: 20px;
+}
+
+.listContainer {
+  clear: both;
+  border-top: 1px dotted grey;
+  margin: 20px;
+}
+
+ol, ul {
+  padding: 5px 40px;
+}
+
+.lists {
+  display: inline-block;
+}
+
+ul li {
+  list-style-type: circle;
+  padding-bottom: 5px;
+}
+
+ol li {
+  list-style: lower-roman;
+  padding-bottom: 5px;
+}
+
+/* Contact Page */
+.contactBody {
+  max-width: 500px;
+  margin: auto;
+  padding-left: 10px;
+}
+
+form {
+  margin: 10px 25px;
+  line-height: 25px;
+  padding: 10px;
+  border: 1px solid grey;
+}
+
+input[type=text] {
+  width: 90%;
+  display: block;
+  margin: 10px;
+}
+
+/* Screen Size */
+@media screen and (max-width: 400px) {
+  section div { margin: 0; }
+  section { padding: 0; }
+}
+@media screen and (min-width: 768px) {
+
+  .heroText {
+  font-size: 13em;}
+
+  .self {
+    float: left;
+    margin: 10px 15px;
+    width: 50%;
+    border-radius: 100%;}
+
+  .aboutMeBody {
+    margin-left: 20px;}
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    }
+
+  .links {
+    display: inline-block;}
+
+  img.logo {
+    width: 15%;
+    height: 15%;}
+
+  .button {
+      border: 3px solid grey;
+      color: grey;
+      padding: 5px 8px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;}
+
+    .button:hover {
+      border: 3px solid black;}
+
+  }
