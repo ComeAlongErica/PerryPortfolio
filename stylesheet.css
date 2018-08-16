@@ -13,8 +13,8 @@ header, footer {
   width: 100%;
 }
 
-a, h1, h2, h3, h4, p, form, ul, ol{
-  font-family: roboto;
+a, h2, h3, h4, p, form, ul, ol{
+  font-family: 'Roboto', sans-serif;
 }
 
 h2 {
@@ -97,17 +97,20 @@ footer{
 /* Index Page */
 
 .heroText {
+  font-family: 'Biryani', sans-serif;
   font-size: 7em;
   font-weight: bold;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 50px;
 }
 
 .heroDescription {
   font-size: .9em;
   font-weight: bold;
   text-align: center;
-  padding-bottom: 25px;
+  padding-bottom: 5px;
+  position: relative;
+  bottom: 20px;
 }
 
 .card {
