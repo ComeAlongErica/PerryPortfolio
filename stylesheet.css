@@ -5,6 +5,10 @@ header, footer {
               linear-gradient(217deg, rgba(239,240,140,.8), rgba(239,240,140,0) 70.71%),
               linear-gradient(336deg, rgba(255,152,197,.8), rgba(255,152,197,0) 70.71%);
 }
+
+* {
+  box-sizing: border-box;
+}
 .container {
   width: 100%;
 }
@@ -65,15 +69,14 @@ img.logo {
 }
 
 footer{
-  position: relative;
+  position: absolute;
   bottom: 0;
   width: 100%;
   height: 100px;
 }
 
-.footerFix {
-  clear: both;
-  position: absolute;
+.footerFixIndex{
+  position: relative;
   bottom: 0;
   width: 100%;
   height: 100px;
@@ -139,7 +142,7 @@ section div img {
 
 }
 
-/* About Me Page */
+/*About Me Page */
 .aboutMe {
   max-width: 75%;
   margin: 0 auto;
@@ -205,6 +208,13 @@ input[type=text] {
   section { padding: 0; }
 }
 @media screen and (min-width: 768px) {
+
+  /* footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+  } */
 
   .heroText {
   font-size: 13em;}
